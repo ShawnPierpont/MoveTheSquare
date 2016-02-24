@@ -28,7 +28,7 @@ public class GameView extends JPanel {
 		setPreferredSize(new Dimension((int) model.getWidth(), (int)model.getHeight()));
 		setBackground(MIDNIGHT_BLUE);
 
-		this.timer = new Timer(1000 / 30, new ActionListener() {
+		this.timer = new Timer(1000 / 100, new ActionListener() {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -80,8 +80,8 @@ public class GameView extends JPanel {
 				Square square = new Square();
 				square.setX(300.0);
 				square.setY(220.0);
-				square.setWidth(40.0);
-				square.setHeight(40.0);
+				square.setWidth(80.0);
+				square.setHeight(80.0);
 				model.setSquare(square);
 				
 				GameController controller = new GameController();
